@@ -148,10 +148,10 @@ details.grp table{min-width:420px}
 }
 </style>
 </head>
-<body class="viewonly">
+<body>
 <header>
   <h1>🐎 Al Shaqab International Arabian Horse Show 2026</h1>
-  <p>Catalogue Dashboard</p>
+  <p>Catalogue Dashboard &amp; Invoice Generator</p>
 </header>
 <nav>
   <button class="tab-btn active" data-view="dash">Dashboard</button>
@@ -341,7 +341,7 @@ let HORSES = /*DATA_START*/[{"cls":3,"cn":"Yearling Fillies","hn":"Roudah Al Jaz
 
 // ---------- GitHub sync (data.xlsx in the repo is the database) ----------
 const [ghOwner,ghRepo,ghBranch,ghPath,ghToken,ghAuto,ghContacts,ghSave,ghPull,publishNowBtn] = ['ghOwner','ghRepo','ghBranch','ghPath','ghToken','ghAuto','ghContacts','ghSave','ghPull','publishNowBtn'].map(id=>document.getElementById(id));
-const APP_MODE = 'shared';          // 'admin' (admin.html) or 'shared' (index.html)
+const APP_MODE = 'admin';          // 'admin' (admin.html) or 'shared' (index.html)
 const DATA_FILE = 'data.xlsx';
 const GH_KEY = 'asq_gh_cfg';
 let lastDataSig = '', adminDirty = false, editSeq = 0, publishTimer = null, publishChain = Promise.resolve();
